@@ -38,20 +38,23 @@ body {
 	overflow-x: hidden;
 }
 
+.header-info {
+	 padding-top: 210px;
+    padding-left: 130px;
+    padding-bottom: 200px;
+    display: block;
+}
 
 .header-list {
   list-style: none;
     font-size: 18px;
-    padding-top: 50px;
-    padding-left: 70px;
 }
 
 .header-list-item {
-  display: block;
-  float: left;
+  display: inline;
 }
 
-.header-link:hover {
+.header-list-item:hover a {
   transition: 0.2s ease-in-out;
   text-decoration: line-through;
 }
@@ -70,56 +73,119 @@ body {
 .hero {
 	width: calc(var(--index) * 36);
 	position: absolute;
-	left: 37vw;
-	top: 22vh;
+	left: 35vw;
+  top: 15vh;
 	z-index: -1;
 }
+
 .main-header {
 	height: 100vh;
 }
+
 .container {
 	padding: 0 7vw;
 }
+
 .main-title {
 	font-size: calc(var(--index) * 8);
 	position: absolute;
 	width: min-content;
-	bottom: 12vh;
+	bottom: 51vh;
 	line-height: 1;
 }
+
 .gallery {
 	display: flex;
 	padding: calc(var(--index) * 8) 0;
 }
+
 .gallery > * {
 	flex: 1;
 	display: flex;
 	align-items: center;
 	flex-direction: column;
 }
+
+#gallery-link {
+    font-size: 2.5rem;
+    text-align: center;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    border-radius: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.footer {
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    border-radius: 100px;
+    padding: 20px;
+}
+
+#contacts-link {
+	   font-size: 2.5rem;
+    text-align: center;
+}
+
+.contacts-info {
+	display: block;
+	float: right;
+}
+
+.contacts-list {
+  list-style: none;
+    font-size: 18px;
+}
+
+.contacts-list-item {
+  display: inline;
+}
+
+.contacts-list-item:hover a {
+  transition: 0.2s ease-in-out;
+  text-decoration: line-through;
+}
+
+.contacts-list-item:nth-last-child(n+2) {
+  margin-right: 35px;
+}
+
+.contacts-links {
+  font-weight: normal; 
+  text-transform: uppercase;
+  color: #ffffff;
+  text-decoration: none;
+}
+
 .gallery__item {
 	max-width: calc(var(--index) * 21);
 	margin-bottom: var(--gallery-gap);
 	max-height: 180vh;
 	border-radius: 8px;
 }
+
 .gallery__left {
 	margin-top: calc(var(--gallery-gap) * 1.75);
 }
+
 .gallery__right .gallery__item {
 	margin: 0;
 	margin-top: var(--gallery-gap);
 }
+
 .text-block {
 	color: var(--color-text);
 	position: relative;
 }
+
 .text-block__h {
 	font-size: 2rem;
 	line-height: 2.4rem;
 	color: var(--color-header);
 	margin-bottom: 1.5rem;
 }
+
 .text-block__p {
 	line-height: 1.75;
 }
